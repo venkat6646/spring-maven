@@ -22,7 +22,7 @@ pipeline{
         stage('docker hub push')
         {
             steps{
-                sh ' echo "venkat1438" | docker login -u venkat664 -p --password-stdin'
+                sh ' echo "venkat1438" | docker login -u venkat664 --password-stdin'
                 sh 'docker push venkat664/spring-app1:v1'
             }
 
